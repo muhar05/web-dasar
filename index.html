@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="main.js"></script>
+    <title>LearnTechPro.com</title>
+</head>
+<body class="unDarkMode">
+    <header>
+        <div>
+            <div class="hamburgerNav" onclick="openNav()">
+                <div class="line"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </div>
+        <nav class="navbar unDarkMode">
+            <div class="right">
+                <img class="logo" src="assets/logo/logo.png" alt="" srcset="">
+                <h1>LearnTechPro.com</h1>
+            </div>
+            <ul class="left">
+                <li><a class="navigasi unDarkMode" href="#berandaId">Beranda</a></li>
+                <li><a class="navigasi unDarkMode" href="#fiturId">Fitur</a></li>
+                <li><a class="navigasi unDarkMode" href="#kursusId">Kursus</a></li>
+                <li><a class="navigasi unDarkMode" href="#tentangKamiId">Tentang Kami</a></li>
+                <li>
+                    <label class="switch">
+                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                        <input type="checkbox" id="toggle" onchange="toggleDarkMode()" class="input">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="sidebarLogo">
+                    <img class="imgSidebar" src="assets/logo/logo.png" alt="" srcset="">
+                    <h1>LearnTechPro.com</h1>
+                </div>
+                <a href="#berandaId">Beranda</a>
+                <a href="#fiturId">Fitur</a>
+                <a href="#kursusId">Kursus</a>
+                <a href="#tentangKamiId">Tentang Kami</a>
+                <label class="switch">
+                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                    <input type="checkbox" id="toggle" onchange="toggleDarkMode()" class="input">
+                    <span class="slider"></span>
+                </label>
+              </div>
+        </section>
+        <section id="berandaId">
+            <div class="Home unDarkMode">
+                <article class="article1">
+                    <img class="image1" src="assets/images/PNG/imageHome.png" alt="" srcset="">
+                    <aside class="reveal">
+                        <h1>Investasikan Waktu Anda dalam Belajar</h1>
+                        <p>"Kamu bisa mempelajari sesuatu yang baru setiap hari jika kamu mau." - Tatum O'Neal</p>
+                        <p class="download">Download app LearnTechPro di Google Play</p>
+                        <a class="playstore-button" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+                              <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+                            </svg>
+                            <span class="texts">
+                              <span class="text-1">GET IT ON</span>
+                              <span class="text-2">Google Play</span>
+                            </span>
+                          </a>
+                    </aside>
+                </article>
+            </div>
+        </section>
+        <!-- fitur -->
+        <section id="fiturId">
+            <div class="fitur unDarkMode">
+                <h1>Fitur</h1>
+                <!-- fitur 1 -->
+               <article class="articleFitur1">
+                <img class="imgFitur1 slide-in-right" src="assets/images/PNG/videoLearning.png" alt="" srcset="">
+                <div class="descriptionFitur1">
+                    <aside class="detailDescription1 fade-in-bottom">
+                        <h1>Video Pembelajaran</h1>
+                        <p>Fitur ini mencakup video-video pembelajaran yang dirancang dengan baik dan berkualitas tinggi. Video ini memungkinkan peserta kursus untuk memahami konsep-konsep kompleks dengan cara yang lebih visual dan interaktif. Instruktur akan menjelaskan materi dengan jelas melalui video ini, membantu peserta kursus untuk menguasai materi dengan lebih baik.</p>
+                    </aside>
+                </div>
+               </article>
+               <!-- fitur 2 -->
+               <article class="articleFitur2 scroll-reveal box-left">
+                <img class="imgFitur2 slide-in-left" src="assets/images/PNG/materi bacaan.png" alt="" srcset="">
+                <div class="descriptionFitur2">
+                    <aside class="detailDescription2 fade-in-bottom">
+                        <h1>Materi Bacaan</h1>
+                        <p>Materi bacaan adalah dokumen atau teks yang berisi informasi tambahan, penjelasan, atau sumber daya yang mendukung materi video pembelajaran. Peserta kursus dapat membaca materi ini untuk mendalaminya atau sebagai referensi tambahan. Materi bacaan dapat membantu peserta kursus memahami materi secara lebih rinci.</p>
+                    </aside>
+                </div>
+               </article>
+               <!--  -->
+               <article class="articleFitur1">
+                <img class="imgFitur1 slide-in-right" src="assets/images/PNG/ujian praktik.png" alt="" srcset="">
+                <div class="descriptionFitur1">
+                    <aside class="detailDescription1 fade-in-bottom">
+                        <h1>Ujian Praktik</h1>
+                        <p>Ujian praktik adalah tes atau tugas yang memungkinkan peserta kursus untuk menguji pemahaman dan keterampilan yang mereka pelajari dalam kursus. Ini dapat berupa latihan soal, proyek praktik, atau tugas yang relevan dengan konten kursus. Ujian praktik membantu peserta kursus menerapkan pengetahuan mereka dalam situasi nyata dan memastikan pemahaman yang mendalam.</p>
+                    </aside>
+                </div>
+               </article>
+               <!-- fitur 4 -->
+               <article class="articleFitur2">
+                <img class="imgFitur2 slide-in-left" src="assets/images/PNG/materi bacaan.png" alt="" srcset="">
+                <div class="descriptionFitur2">
+                    <aside class="detailDescription2 fade-in-bottom">
+                        <h1>Interaksi</h1>
+                        <p>Ini adalah fitur penting yang memungkinkan peserta kursus untuk berkomunikasi langsung dengan instruktur. Peserta kursus dapat mengajukan pertanyaan, meminta klarifikasi, atau meminta bantuan jika mereka menghadapi kesulitan dalam pemahaman materi. Interaksi ini dapat membantu peserta kursus merasa lebih terhubung dan didukung dalam proses belajar mereka.</p>
+                    </aside>
+                </div>
+               </article>
+            </div>
+        </section>
+        <!-- fitur -->
+        <!-- kursus -->
+        <section id="kursusId">
+            <div class="containerModal">
+                <!-- web development -->
+                <div class="modal" id="modalWeb">
+                    <span class="close" onclick="closeModalWeb()">&times;</span>
+                    <h1>Web Development Fundamentals</h1>
+                    <p>Kursus ini dirancang untuk membantu peserta memahami dasar-dasar pengembangan web. Anda akan mempelajari berbagai keterampilan dan teknologi yang diperlukan untuk merancang, mengembangkan, dan menerapkan situs web interaktif. Dengan kombinasi kuliah, proyek praktik, dan latihan tangan-tangan, Anda akan membangun fondasi yang kuat dalam pemrograman web.</p>
+                    <ul class="listKonten">
+                        <p>Konten Kursus : </p>
+                        <li>Web Development Fundamentals</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Web Design</li>
+                        <li>Best Practices</li>
+                    </ul>
+                    <button>Get Apps</button>
+                </div>
+                <!-- desagn grafis -->
+                <div class="modal" id="modalDesign">
+                    <span class="close" onclick="closeModalDesign()">&times;</span>
+                    <h1>Desain Grafis</h1>
+                    <p>Kursus desain grafis adalah program pelatihan yang dirancang untuk mengajarkan berbagai keterampilan dan konsep yang berkaitan dengan desain grafis. Tujuan kursus ini adalah untuk membantu peserta mengembangkan kemampuan mereka dalam menciptakan grafik, ilustrasi, dan desain visual yang efektif.</p>
+                    <ul class="listKonten">
+                        <p>Konten Kursus : </p>
+                        <li>Perangkat Lunak Desain Grafis</li>
+                        <li>Teori Warna dan Tipografi</li>
+                        <li>Ilustrasi dan Desain Vector</li>
+                        <li>Desain Grafis untuk Media Sosial</li>
+                        <li>Proyek Desain Grafis</li>
+                        <li>Portofolio</li>
+                    </ul>
+                    <button>Get Apps</button>
+                </div>
+                <!-- data analyst -->
+                <div class="modal" id="modalData">
+                    <span class="close" onclick="closeModalData()">&times;</span>
+                    <h1>Data Analyst</h1>
+                    <p>Kursus Data Analis adalah program pelatihan yang dirancang untuk mengajarkan peserta keterampilan dan konsep yang diperlukan untuk mengumpulkan, menganalisis, dan menginterpretasi data. Tujuan utama dari kursus ini adalah untuk membekali peserta dengan kemampuan untuk mengambil keputusan yang didasarkan pada bukti data yang akurat.</p>
+                    <ul class="listKonten">
+                        <p>Konten Kursus : </p>
+                        <li>Statistik Dasar</li>
+                        <li>Pengumpulan Data</li>
+                        <li>Perangkat Lunak Analisis Data(Python, R, dll)</li>
+                        <li>Visualisasi Data</li>
+                        <li>Pengolahan Big Data</li>
+                        <li>Data Mining</li>
+                    </ul>
+                    <button>Get Apps</button>
+                </div>
+                <!-- react developer -->
+                <div class="modal" id="modalReact">
+                    <span class="close" onclick="closeModalReact()">&times;</span>
+                    <h1>React Developer</h1>
+                    <p>Kursus React Developer adalah program pelatihan yang ditujukan untuk mengajarkan peserta cara mengembangkan aplikasi web menggunakan perpustakaan JavaScript yang populer, yaitu React. React adalah salah satu kerangka kerja (framework) front-end yang paling banyak digunakan dan dihargai dalam pengembangan web modern.</p>
+                    <ul class="listKonten">
+                        <p>Konten Kursus : </p>
+                        <li>JavaScript Modern</li>
+                        <li>Pembuatan Komponen React</li>
+                        <li>Routing dalam React</li>
+                        <li>Manajemen State</li>
+                        <li>React Hooks</li>
+                        <li>Version Control (Git)</li>
+                    </ul>
+                    <button>Get Apps</button>
+                </div>
+                <!-- cyber security -->
+                <div class="modal" id="modalCyber">
+                    <span class="close" onclick="closeModalCyber()">&times;</span>
+                    <h1>Cyber Security</h1>
+                    <p>Kursus keamanan cyber (cybersecurity) adalah program pelatihan yang bertujuan untuk mengajarkan peserta tentang prinsip-prinsip dan praktik yang diperlukan untuk melindungi sistem, data, dan infrastruktur dari ancaman dan serangan siber. Keamanan cyber sangat penting dalam dunia digital yang semakin kompleks, di mana serangan siber dapat memiliki dampak yang merusak.</p>
+                    <ul class="listKonten">
+                        <p>Konten Kursus : </p>
+                        <li>Ancaman Siber</li>
+                        <li>Dasar-dasar Keamanan Jaringan</li>
+                        <li>Keamanan Aplikasi</li>
+                        <li>Manajemen Identitas dan Akses</li>
+                        <li>Keamanan Data</li>
+                        <li>Pengujian Keamanan</li>
+                    </ul>
+                    <button>Get Apps</button>
+                </div>
+                <!-- design ui/ux -->
+                <div class="modal" id="modalUiUx">
+                    <span class="close" onclick="closeModalUiUx()">&times;</span>
+                    <h1>Design UI/UX</h1>
+                    <p>Kursus Desain UI/UX adalah program pelatihan yang dirancang untuk mengajarkan peserta cara merancang antarmuka pengguna (UI) yang menarik dan pengalaman pengguna (UX) yang efektif untuk aplikasi dan situs web. Desain UI (User Interface) fokus pada tampilan visual dan interaksi dengan elemen-elemen seperti tombol, ikon, dan layout, sementara Desain UX (User Experience) berfokus pada bagaimana pengguna berinteraksi dengan produk dan pengalaman keseluruhan pengguna.</p>
+                    <ul class="listKonten">
+                        <p>Konten Kursus : </p>
+                        <li>Pengantar Desain UI/UX</li>
+                        <li>Pengembangan User Flows</li>
+                        <li>Desain Wireframe</li>
+                        <li>Desain Prototipe</li>
+                        <li>Proyek Desain UI/UX</li>
+                    </ul>
+                    <button>Get Apps</button>
+                </div>
+            </div>
+            <div id="overlay"></div>
+            <div class="Courses unDarkMode">
+                <h1>Kursus</h1>
+                <div class="containerCard reveal">
+                    <div class="card-kursus">
+                        <div class="card-details">
+                            <aside>
+                                <img class="imageCard" src="assets/images/PNG/webdev.png" alt="">
+                            </aside>
+                          <p class="text-title">Web Developer</p>
+                        </div>
+                        <button class="card-button" onclick="modalWeb()">More info</button>
+                      </div>
+                      <div class="card-kursus">
+                        <div class="card-details">
+                            <aside>
+                                <img class="imageCard" src="assets/images/PNG/design grafis.png" alt="">
+                            </aside>
+                          <p class="text-title">Design Grafis</p>
+                        </div>
+                        <button class="card-button" onclick="modalDesign()">More info</button>
+                      </div>
+                      <div class="card-kursus">
+                        <div class="card-details">
+                            <aside>
+                                <img class="imageCard" src="assets/images/PNG/data analisis.png" alt="">
+                            </aside>
+                          <p class="text-title">Data Analyst</p>
+                        </div>
+                        <button class="card-button" onclick="modalData()">More info</button>
+                      </div>
+                      <div class="card-kursus">
+                        <div class="card-details">
+                            <aside>
+                                <img class="imageCard" src="assets/images/PNG/React .png" alt="">
+                            </aside>
+                          <p class="text-title">React Developer</p>
+                        </div>
+                        <button class="card-button" onclick="modalReact()">More info</button>
+                      </div>
+                      <div class="card-kursus">
+                        <div class="card-details">
+                            <aside>
+                                <img class="imageCard" src="assets/images/PNG/cyber.png" alt="">
+                            </aside>
+                          <p class="text-title">Cyber Security</p>
+                        </div>
+                        <button class="card-button" onclick="modalCyber()">More info</button>
+                      </div>
+                      <div class="card-kursus">
+                        <div class="card-details">
+                            <aside>
+                                <img class="imageCard" src="assets/images/PNG/uiux.png" alt="">
+                            </aside>
+                          <p class="text-title">Design UI/UX</p>
+                        </div>
+                        <button class="card-button" onclick="modalUiUx()">More info</button>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <!-- kursus -->
+        <!-- Tentang Kami -->
+        <section id="tentangKamiId">
+            <div class="About unDarkMode">
+                <h1 class="judulTentangKami unDarkMode">Tentang Kami</h1>
+                <article class="contentKami reveal">
+                    <img class="image2" src="assets/logo/logo.png" alt="" srcset="">
+                    <div class="article2">
+                        <h1>LearnTechPro.com</h1>
+                        <p>LearnTechPro.com adalah platform kursus online yang inovatif dan berkualitas tinggi yang dirancang untuk membantu Anda mengembangkan keterampilan dan pengetahuan Anda dalam berbagai bidang teknologi. Di sini, Anda akan menemukan beragam kursus yang diajarkan oleh para ahli industri terkemuka dalam topik-topik seperti pemrograman, desain grafis, keamanan cyber, analisis data, dan banyak lagi.</p>
+                        <p>Kami menyediakan pengalaman belajar interaktif dengan video pembelajaran berkualitas tinggi, materi bacaan, ujian praktik, serta kesempatan untuk berinteraksi dengan instruktur dan sesama peserta kursus. LearnTechPro.com bertujuan untuk membantu Anda mencapai tujuan pendidikan dan karir Anda dengan memberikan akses ke pengetahuan terbaru dan alat yang Anda butuhkan untuk sukses dalam dunia teknologi yang terus berkembang. Bergabunglah dengan komunitas belajar kami dan mulailah perjalanan menuju keahlian teknologi yang unggul di LearnTechPro.com!</p>
+                    </div>
+                </article>
+            </div>
+            <div class="profile unDarkMode">
+                <aside class="describeProfile fade-in-bottom">
+                    <p>Dalam Pembuatan dan pengembangan Aplikasi LearnTechPro.com, kami mempunyai tim yang terdiri dari 4 orang</p>
+                </aside>
+                <div class="containerCardProfile reveal">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imagePerson" src="assets/images/person/person1.png" alt="" srcset="">
+                        </div>
+                        <div class="card-info">
+                        <p class="title">John</p>
+                        <p class="subtitle">Front-End Dev</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imagePerson" src="assets/images/person/person2.png" alt="" srcset="">
+                        </div>
+                        <div class="card-info">
+                        <p class="title">Marc</p>
+                        <p class="subtitle">UI/UX Designer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imagePerson" src="assets/images/person/person3.png" alt="" srcset="">
+                        </div>
+                        <div class="card-info">
+                        <p class="title">Michael</p>
+                        <p class="subtitle">Back-End Dev</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="imagePerson" src="assets/images/person/person4.png" alt="" srcset="">
+                        </div>
+                        <div class="card-info">
+                        <p class="title">Anna</p>
+                        <p class="subtitle">Front-End Dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tentang Kami -->
+        <!-- form -->
+        <section>
+            <aside class="containerForm unDarkMode">
+                <div class="form fade-in-bottom">
+                    <div class="input-group">
+                        <input required="" type="text" email="text" autocomplete="off" class="input">
+                        <label class="user-label">Email</label>
+                      </div>
+                    <div class="input-group">
+                        <input required="" type="text" nomor="number" autocomplete="off" class="input">
+                        <label class="user-label">Nomor Telepon</label>
+                      </div>
+                    <div class="input-group">
+                        <input required="" type="text" subject="text" autocomplete="off" class="input">
+                        <label class="user-label">Subject</label>
+                      </div>
+                    <div class="input-group">
+                        <textarea type="text" required="" Pesan="text" rows="10" cols="50" class="input-pesan"></textarea>
+                        <label class="user-label-pesan">Pesan</label>
+                      </div>
+                      <a href= "mailto: contact@ferdiansyahmuh5@gmail.com" class="btn-submit">
+                        Submit
+                      </a>
+                </div>
+            </aside>
+        </section>
+        <!-- form -->
+    </main>
+    
+    <footer>
+        <div class="containerBiodata unDarkMode">
+            <div class="card-container fade-in-bottom">
+                <div class="card-biodata">
+                <div class="img-content">
+                  <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="content">
+                  <p class="heading">Biodata</p>
+                  <p class="paragraf">Nama : Muhar Ferdiansyah</p>
+                  <p class="paragraf">Alamat : Kota Tangerang</p>
+                  <p class="paragraf">Email : ferdiansyahmuh5@gmail.com</p>
+                  <p class="paragraf">Nomor Telepon : 085779659563</p>
+                  <div class="share">
+                    <a href="https://github.com/muhar05"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg></a>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                  </svg></a>
+                    <a href="https://www.instagram.com/muharr_05/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                  </svg></a>
+                  <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path>
+                  </svg></a>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+        <div class="credit fade-in-bottom">
+            <div class="footerLeft">
+                <img src="assets/logo/logo.png" alt="">
+                <h1>LearnTechPro.com</h1>
+                <p>Copyright &copy; 2023</p>
+            </div>
+            <div class="footerRight">
+                <p>Created by Muhar Ferdiansyah</p>
+                <a class="playstore-button1" href="#">
+                    <svg class="iconPlaystore" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+                      <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+                    </svg>
+                    <span class="texts">
+                      <span class="text-1">GET IT ON</span>
+                      <span class="text-2">Google Play</span>
+                    </span>
+                  </a>
+                  <div class="sosmed">
+                   <img class="sosmedIcon" src="assets/icon/facebook.png" alt="" srcset="">
+                   <a href="">LearnTechPro</a>
+                   <img class="sosmedIcon" src="assets/icon/instagram.png" alt="" srcset="">
+                   <a href="">LearnTechPro.id</a>
+                   <img class="sosmedIcon" src="assets/icon/pinterest-logo.png" alt="" srcset="">
+                   <a href="">LearnTechPro</a>
+                   <img class="sosmedIcon" src="assets/icon/youtube.png" alt="" srcset="">
+                   <a href="">LearnTechPro.id</a>
+                  </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
